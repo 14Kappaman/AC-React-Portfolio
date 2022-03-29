@@ -12,10 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.profilepic {
+  max-height: 250px;
+}
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,5 +36,198 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+* { 
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: rgb(71, 70, 70);
+  --secondary: rgb(85, 197, 235);
+  --tertiary: rgb(41, 38, 38);
+  --dark: rgb(12, 12, 12);
+  --light: rgb(255, 255, 255);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--primary);
+  background-color: var(--light);
+  line-height: 1.5;
+
+}
+h1,
+h2,
+h3,
+h4 { 
+  margin: 0;
+  
+  
+}
+
+p {  
+  margin: 1rem 0;
+
+}
+header {
+  padding: 15px 6% 15px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--tertiary);
+  box-shadow: 0 5px 35px rgb(48, 43, 43);
+}
+header h1{
+  color: var(--tertiary);
+  background-color: var(--secondary);
+  padding: 5px 1% 5px 6%;
+  margin: 0%;
+  font-size: 4vw;
+  line-height: 1;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+nav a{
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--secondary);
+  margin: right;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary)100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 2.5s ease-in; 
+  font-size: 1.4rem;
+  
+}
+nav a:hover {
+  background-size: 100% 100%;
+  color:var(--primary);
+
+}
+nav a:last-child{
+  margin-right: 0;
+  
+}
+main {
+  
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  
+
+}
+.main-wrapper {
+  max-width: 88%;
+  margin-right: auto;
+  margin-left: auto;
+}
+img {
+  width: 100%;
+  object-fit: contain;
+
+}
+#portfolioitems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+.application {
+background-color: rgb(209, 196, 196);
+padding: 0 0 20px 0;
+border: 5px solid black;
+color: black;
+min-height: 150px;
+max-height: 150px;
+flex-basis: calc(50% - 1em);
+display: flex;
+align-items: flex-end;
+margin: 0.5em;
+text-decoration: none;
+background-blend-mode: soft-light;
+background-size: 150%;
+transition: all 0.5s;
+
+}
+
+.application:first-child{
+  min-height: 400px;
+  flex-basis: 100%;
+
+}
+
+.application:hover{
+   background-color:rgba(0, 0, 0, 0.3);
+}
+
+.application div {
+  background-color: blue;
+}
+
+.application h3 { 
+  font-size: 1.6rem;
+} 
+
+.page-section > h2 {
+  border-right: black 10px solid;;
+  text-align: right;
+  padding-right: 15px;
+  flex: 0 0 20%;
+  font-size: 4vw;
+  line-height: 1.1;
+}
+.page-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: stretch;
+  padding: 10px 0px;
+  margin: 25px 0px; 
+}
+.page-section > div{
+  flex: 0 0 77%;
+
+}
+.page-section p {
+  margin-bottom: 20px;
+}
+.cheap{
+   background-image: url("./../public/images/cheapdateimagemodified.jpg");
+  
+  
+}
+
+.led{
+  background-image: url("./../public/images/Coding_and_Programming_-_Computer_Science_and_IT.jpg");
+}
+
+.calc{
+  background-image: url("./../public/images/Connected_Smart_City.jpg");
+}
+
+.proeventplanning{
+  background-image: url("./../public/images/ProEventPlanning.png");
+}
+
+.employeemanagementsystem{
+  background-image: url("./../public/images/EmployeeTracker.png");
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  section {
+      grid-template-columns: 1fr;
   }
 }
