@@ -1,30 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { Footer } from './footer';
+import {Navigation} from "./navigation";
+import { Header } from './header';
+import { Project } from './project';
 
 function App() {
   return (
-    <div className="App">
-       <header className='App-header'>
-        <h1>Welcome to My Portfolio </h1>
-
-        <nav>
-
-            <a href="#Home">Home</a>
-            <a href="#about-me">About Me</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="./assests/AubreyCrookResume2021.pdf" target="_blank">Resume</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-    </header>
-
+    <div>
+       
+    <Navigation/>
 
     <section className="hero"></section>
 
     <main className="main-wrapper"> 
 
         <section id="about-me" className="page-section">
-            <h2><a name="Home"></a> About Aubrey</h2>
+            <Header name="Home" value="About Aubrey"/>
             <div>
                 <img className="profilepic" src="./../images/mypic.jpg"></img>
 
@@ -42,44 +34,62 @@ function App() {
             </div>
         </section>
 
+        <section id="resume" className="page-section">
+        <Header name="Resume" value="Resume"/> <div>
+        <a href='./../images/AubreyCrookResume2021 (1).pdf'>Resume</a>
+        <h3>Proficiencies</h3>
+<ul> 
+<li>
+HTML
+</li>
+<li>
+CSS
+</li>
+<li>
+JavaScript
+</li>
+
+
+</ul>
+
+        </div>
+
+      
+
+            </section>
+
         <section id="portfolio" className="page-section">
-            <h2>Work</h2>
+            <Header name="Work" value="Work"/>
             <div id="portfolioitems">
-                <a href="https://14kappaman.github.io/CheapDate/" className="application cheap">
-                    <div>
-                        <h3>Cheap Date</h3>
-                        <span>javascript/html/bulma</span>
-                    </div>
-                </a>
+                <Project link="https://14kappaman.github.io/CheapDate/" 
+                name="Cheap Date" 
+                image="cheap"
+                languages="JavaScript/HTML/bulma"/>
 
-                <a href="https://14kappaman.github.io/WeatherDashboard/" className="application led">
-                    <div>
-                        <h3>Weather App</h3>
-                        <span>Javascript/HTML</span>
-                    </div>
-                </a>
+                <Project link="https://14kappaman.github.io/WeatherDashboard/" 
+                name="Weather App" 
+                image="led"
+                languages="Javascript/HTML"/>
 
-                <a href="https://14kappaman.github.io/DailyWorkCalendar/" className="application calc">
-                    <div>
-                        <h3>Work Calendar</h3>
-                        <span>Bootstrap/Jquery/HTML</span>
-                    </div>
-                </a>
+                <Project link="https://14kappaman.github.io/DailyWorkCalendar/" 
+                name="Work Calendar" 
+                image="calc"
+                languages="Bootstrap/Jquery/HTML"/>
 
-                <a href="#" className="application proeventplanning ">
-                    <div>
-                        <h3>Pro Event Planning</h3>
-                        <span>Javascript/Handlebars</span>
-                    </div>
-                </a>
+                <Project link="#" 
+                name="Pro Event Planning" 
+                image="proeventplanning"
+                languages="Javascript/Handlebars"/>
 
-                <a href="https://watch.screencastify.com/v/MjbQ383q7lo4uTzcufvv" className="application employeemanagementsystem">
-                    <div>
-                        <h3>Employee Management System</h3>
-                        <span>Javascript/MySQL</span>
-                       
-                    </div>
-                </a>
+                <Project link="https://watch.screencastify.com/v/MjbQ383q7lo4uTzcufvv" 
+                name="Employee Management System" 
+                image="employeemanagementsystem"
+                languages="Javascript/MySQL"/>
+
+                <Project link="https://warm-tor-69006.herokuapp.com/" 
+                name="Tech Blog" 
+                image="tech_blog"
+                languages="JavaScript/Handlebars/CSS"/>
 
             </div>
 
@@ -87,24 +97,37 @@ function App() {
 
 
         <section id="contact" className="page-section">
-            <h2><a name="Contact"></a>Contact</h2>
+            <Header name="Contact" value="Contact"/>
             <address>
-                <p><strong>Phone </strong>: 555-555-1234</p>
-                <a href="https://github.com/14Kappaman">Github</a>
-                <a href="https://www.linkedin.com/in/aubrey-c-88443058/">LinkedIn</a>
+                <div>
+                <strong>Phone </strong>
+                <a href='tel:5555551234'>555-555-1234</a>
+                </div>
+                    <div>
+                    <strong>Email </strong>
+                    
                 <a href="mailto:aubrey.crook@gmail.com">aubrey.crook@gmail.com </a>
+
+                    </div>
+                <a href="https://github.com/14Kappaman">
+                    
+            <img className='addressimg' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          
+                    </a>
+                <a href="https://www.linkedin.com/in/aubrey-c-88443058/">
+                    
+            <img className='addressimg' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+          
+                    </a>
+            
+            <a href='./../images/AubreyCrookResume2021 (1).pdf'>Resume</a>
             </address>
-
-
         </section>
 
 
     </main>
 
-    <footer>
-        <p>&copy; All Rights Reserved 2021</p>
-
-    </footer>
+    <Footer/>
 
     </div>
   );
