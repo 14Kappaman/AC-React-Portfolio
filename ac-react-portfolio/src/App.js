@@ -14,7 +14,7 @@ function App() {
     <section className="hero"></section>
 
     <main className="main-wrapper"> 
-
+        <base target='Home'></base>
         <section id="about-me" className="page-section">
             <Header name="Home" value="About Aubrey"/>
             <div>
@@ -36,7 +36,18 @@ function App() {
 
         <section id="resume" className="page-section">
         <Header name="Resume" value="Resume"/> <div>
-        <a href='./../images/AubreyCrookResume2021 (1).pdf'>Resume</a>
+
+            <div id='resumeSection'>
+        <a href='./../images/AubreyCrookResume2021 (1).pdf'>
+            <div className='resumeLink'>
+                <div className='textIcon'>
+                    📄
+                </div>
+            <h3>Resume</h3>
+
+            </div>
+            </a>
+        <div>
         <h3>Proficiencies</h3>
 <ul> 
 <li>
@@ -48,9 +59,18 @@ CSS
 <li>
 JavaScript
 </li>
+<li>NodeJS</li>
+<li>MySQL</li>
+<li>Heroku</li>
+<li>ExpressJS</li>
+<li>React</li>
 
 
 </ul>
+
+        </div>
+
+            </div>
 
         </div>
 
@@ -99,28 +119,42 @@ JavaScript
         <section id="contact" className="page-section">
             <Header name="Contact" value="Contact"/>
             <address>
-                <div>
-                <strong>Phone </strong>
-                <a href='tel:5555551234'>555-555-1234</a>
-                </div>
+                <form>
                     <div>
-                    <strong>Email </strong>
-                    
-                <a href="mailto:aubrey.crook@gmail.com">aubrey.crook@gmail.com </a>
-
+                    <label>
+                        Name: <input type="text" name="name" required></input>
+                    </label>
                     </div>
-                <a href="https://github.com/14Kappaman">
-                    
-            <img className='addressimg' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-          
-                    </a>
-                <a href="https://www.linkedin.com/in/aubrey-c-88443058/">
-                    
-            <img className='addressimg' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
-          
-                    </a>
-            
-            <a href='./../images/AubreyCrookResume2021 (1).pdf'>Resume</a>
+
+                   <div>
+                   <label>
+                        Email: <input type="email" name="email" required></input>
+                    </label>
+                   </div>
+                    <div>
+                    <label>
+                        Message: <textarea name="message" required></textarea>
+
+                    </label> 
+                    </div>
+                   <label>
+                       <div>&nbsp;</div>
+                    <input type="submit" value="send"></input>
+                   </label>
+                </form>
+
+                <div>
+                    <div className='address_item'>
+                        <div><strong>Phone: </strong></div>
+                        <div><a href='tel:5555551234'>555-555-1234</a></div>
+                    </div>
+                    <div className='address_item'>
+                        <div><strong>Email: </strong></div>
+                        <div><a href='tel:5555551234'><a href="mailto:aubrey.crook@gmail.com">aubrey.crook@gmail.com </a></a></div>
+                    </div>
+                
+                
+                </div>
             </address>
         </section>
 
