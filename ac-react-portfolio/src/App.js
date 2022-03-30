@@ -6,7 +6,7 @@ import { Header } from './header';
 import { Project } from './project';
 
 function App() {
-  return (
+  return ( 
     <div>
        
     <Navigation/>
