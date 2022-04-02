@@ -18,7 +18,7 @@ function App() {
         <section id="about-me" className="page-section">
             <Header name="Home" value="About Aubrey"/>
             <div>
-                <img className="profilepic" src="./../images/mypic.jpg"></img>
+                <img className="profilepic" src="./../public/images/mypic.jpg"></img>
 
                 <p>Aubrey Crook is the Director of STEM Programs for the Georgia Youth Science & Technology Center, Inc.
                     (GYSTC) at Kennesaw State University. He is a highly effective educator in the fields of science and
@@ -38,7 +38,7 @@ function App() {
         <Header name="Resume" value="Resume"/> <div>
 
             <div id='resumeSection'>
-        <a href='./../images/acrookresume.pdf'>
+        <a href='./../public/images/acrookresume.pdf'>
             <div className='resumeLink'>
                 <div className='textIcon'>
                     📄
