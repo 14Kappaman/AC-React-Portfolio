@@ -38,7 +38,7 @@ function App() {
         <Header name="Resume" value="Resume"/> <div>
 
             <div id='resumeSection'>
-        <a href='./../images/AubreyCrookResume2021 (1).pdf'>
+        <a href='./../images/acrookresume.pdf'>
             <div className='resumeLink'>
                 <div className='textIcon'>
                     📄
