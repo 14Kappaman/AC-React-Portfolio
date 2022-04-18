@@ -1,7 +1,7 @@
 export function Footer(props) {
     return (
         <footer>
-        <p>&copy; All Rights Reserved 2021</p>
+        <p>&copy; All Rights Reserved 2022</p>
         <div className="mediaicons">
         <a href="https://github.com/14Kappaman">
                     

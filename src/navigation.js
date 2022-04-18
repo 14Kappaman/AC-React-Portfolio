@@ -5,13 +5,15 @@ export function Navigation(props) {
 
         <nav>
 
-            <a href="#Home">Home</a>
-            <a href="#about-me">About Me</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="./assests/AubreyCrookResume2021.pdf" target="_blank">Resume</a>
-            <a href="#contact">Contact</a>
+            <a href="/">Home</a>
+            <a href="/work">Portfolio</a>
+            <a href="/resume">Resume</a>
+            <a href="/contact">Contact</a>
 
         </nav>
     </header>
     )
 }
+
+//<a href="/about-me">About Me</a>
+//<a href="./assests/AubreyCrookResume2021.pdf" target="_blank">Resume</a>
