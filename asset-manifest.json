@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/AC-React-Portfolio/static/css/main.9f4b0cc8.css",
-    "main.js": "/AC-React-Portfolio/static/js/main.e8a5a905.js",
+    "main.css": "/AC-React-Portfolio/static/css/main.be8dfe50.css",
+    "main.js": "/AC-React-Portfolio/static/js/main.37764a69.js",
     "static/js/787.525b6b24.chunk.js": "/AC-React-Portfolio/static/js/787.525b6b24.chunk.js",
     "static/media/Connected_Smart_City.jpg": "/AC-React-Portfolio/static/media/Connected_Smart_City.904cda5e6e8e17e57234.jpg",
     "static/media/ProEventPlanning.png": "/AC-React-Portfolio/static/media/ProEventPlanning.104acdc732ac181f25a1.png",
+    "static/media/artstorescreenshot.png": "/AC-React-Portfolio/static/media/artstorescreenshot.30686d3453c57b0f5f44.png",
     "static/media/Coding_and_Programming_-_Computer_Science_and_IT.jpg": "/AC-React-Portfolio/static/media/Coding_and_Programming_-_Computer_Science_and_IT.f932ab63a19dae8513a8.jpg",
     "static/media/EmployeeTracker.png": "/AC-React-Portfolio/static/media/EmployeeTracker.57337f71a62c3b5f08f5.png",
     "static/media/cheapdateimagemodified.jpg": "/AC-React-Portfolio/static/media/cheapdateimagemodified.df917a7d694f7180ced7.jpg",
     "static/media/tech_blog.png": "/AC-React-Portfolio/static/media/tech_blog.2b2d206173750680ed38.png",
     "static/media/logo.svg": "/AC-React-Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/AC-React-Portfolio/index.html",
-    "main.9f4b0cc8.css.map": "/AC-React-Portfolio/static/css/main.9f4b0cc8.css.map",
-    "main.e8a5a905.js.map": "/AC-React-Portfolio/static/js/main.e8a5a905.js.map",
+    "main.be8dfe50.css.map": "/AC-React-Portfolio/static/css/main.be8dfe50.css.map",
+    "main.37764a69.js.map": "/AC-React-Portfolio/static/js/main.37764a69.js.map",
     "787.525b6b24.chunk.js.map": "/AC-React-Portfolio/static/js/787.525b6b24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f4b0cc8.css",
-    "static/js/main.e8a5a905.js"
+    "static/css/main.be8dfe50.css",
+    "static/js/main.37764a69.js"
   ]
 }
