@@ -4,7 +4,7 @@ import { Footer } from './footer';
 import {Navigation} from "./navigation";
 import { Header } from './header';
 import { Project } from './project';
-import { Routes, Route, Router, BrowserRouter } from "react-router-dom"
+import { Routes, Route, Router, BrowserRouter, HashRouter } from "react-router-dom"
 import { About } from './pages/about';
 import { Contact } from './pages/contact';
 import { Resume } from './pages/resume';
@@ -20,14 +20,14 @@ function App() {
 
     <main className="main-wrapper"> 
         <base target='Home'></base>
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
-                <Route path="AC-React-Portfolio" element={<About/>}></Route>
-                <Route path="AC-React-Portfolio/contact" element={<Contact/>}></Route>
-                <Route path="AC-React-Portfolio/resume" element={<Resume/>}></Route>
-                <Route path="AC-React-Portfolio/work" element={<Work/>}></Route>
+                <Route path="/" element={<About/>}></Route>
+                <Route path="/contact" element={<Contact/>}></Route>
+                <Route path="/resume" element={<Resume/>}></Route>
+                <Route path="/work" element={<Work/>}></Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </main>
 
     <Footer/>
