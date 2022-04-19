@@ -5,10 +5,10 @@ export function Navigation(props) {
 
         <nav>
 
-            <a href="/">Home</a>
-            <a href="/work">Portfolio</a>
-            <a href="/resume">Resume</a>
-            <a href="/contact">Contact</a>
+            <a href="/AC-React-Portfolio">Home</a>
+            <a href="/AC-React-Portfolio/work">Portfolio</a>
+            <a href="/AC-React-Portfolio/resume">Resume</a>
+            <a href="/AC-React-Portfolio/contact">Contact</a>
 
         </nav>
     </header>

@@ -22,10 +22,10 @@ function App() {
         <base target='Home'></base>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<About/>}></Route>
-                <Route path="contact" element={<Contact/>}></Route>
-                <Route path="resume" element={<Resume/>}></Route>
-                <Route path="work" element={<Work/>}></Route>
+                <Route path="AC-React-Portfolio" element={<About/>}></Route>
+                <Route path="AC-React-Portfolio/contact" element={<Contact/>}></Route>
+                <Route path="AC-React-Portfolio/resume" element={<Resume/>}></Route>
+                <Route path="AC-React-Portfolio/work" element={<Work/>}></Route>
             </Routes>
         </BrowserRouter>
     </main>
