@@ -1,8 +1,10 @@
 import { Header } from "../header";
 
 export function About(props) {
+
+    
     return (
-        <section id="about-me" className="page-section">
+        <section id="about" className="page-section">
             <Header name="Home" value="About Aubrey"/>
             
             <div>

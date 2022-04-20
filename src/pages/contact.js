@@ -36,7 +36,7 @@ export function Contact(props) {
                 </div>
                 <div className='address_item'>
                     <div><strong>Email: </strong></div>
-                    <div><a href='tel:5555551234'><a href="mailto:aubrey.crook@gmail.com">aubrey.crook@gmail.com </a></a></div>
+                    <div><a href="mailto:aubrey.crook@gmail.com">aubrey.crook@gmail.com </a></div>
                 </div>
             
             

@@ -3,7 +3,7 @@ import { Project } from "../project";
 
 export function Work(props) {
     return (
-        <section id="portfolio" className="page-section">
+        <section id="work" className="page-section">
             <Header name="Work" value="Work"/>
 
             <div>
